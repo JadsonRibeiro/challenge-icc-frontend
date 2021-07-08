@@ -1,0 +1,62 @@
+#header-container {
+  display: flex;
+  justify-content: space-between;
+  background: var(--gray-600);
+  height: 40px;
+  padding: 5px;
+
+  .items {
+    display: flex;
+    gap: 5px;
+
+    > div {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+      background: var(--gray-500);
+      border-radius: 4px;
+      color: white;
+    }
+
+    .squares {
+      gap: 10px;
+      padding: 5px;
+      
+      svg {
+        color: var(--white);
+        font-size: 25px;
+      }
+
+      span {
+        font-weight: bold;
+      }
+    }
+
+    .search {
+      position: relative;
+      
+      input {
+        background: transparent;
+        border: none;
+        height: 100%;
+      }
+
+      svg {
+        position: absolute;
+        right: 10px;
+      }
+    }
+  }
+
+  .logo {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    color: var(--gray-400);
+    font-weight: 700;
+    gap: 5px;
+    font-size: 25px;
+  }
+}

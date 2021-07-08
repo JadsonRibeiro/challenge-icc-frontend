@@ -1,0 +1,96 @@
+.card-container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin: 4px 0px;
+  
+  > button {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 35px;
+    background: var(--white);
+    font-size: 15px;
+    padding: 6px;
+    border-radius: 4px;
+    border: none;
+    box-shadow: 0px 5px 5px var(--gray-400);
+    cursor: pointer;
+  }
+  
+}
+
+.ReactModal__Content {
+  .modalContainer {
+    display: flex;
+    justify-content: space-between;
+
+    > svg {
+      font-size: 30px;
+      color: var(--gray-700);
+      margin: 0 12px;
+    }
+
+    .content {
+      flex: 1;
+      
+      input {
+        color: var(--gray-900);
+        border: none;
+        background: transparent;
+        width: 90%;
+        font-size: 20px;
+        padding: 8px;
+        margin-bottom: 8px;
+
+        &:focus {
+          background: var(--white);
+          box-shadow: inset 0 0 0 2px #0079bf;
+        }
+      }
+
+      p {
+        color: var(--gray-600);
+
+        span {
+          text-decoration: underline;
+        }
+      }
+
+      .actions {
+        display: flex;
+        justify-content: flex-end;
+        width: 100%;
+        gap: 16px;
+
+        button {
+          border-radius: 4px;
+          border: none;
+          cursor: pointer;
+          padding: 8px 12px;
+          background: transparent;
+          
+          &.update-button {
+            background: var(--green-500);
+            color: var(--white);
+          } 
+        }
+      }
+    }
+
+    > button {
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
+      align-self: self-start;
+
+      svg {
+        font-size: 20px;
+      }
+    }
+  }
+}
+
+.ReactModal__Overlay {
+  background: rgba(0,0,0,.64) !important;
+}
